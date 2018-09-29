@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <!--        以下为自定义      -->
+    <color name="colorRed">#FF0000</color><!-- 红-->
+    <color name="colorToolBarRed">#DB3E38</color><!-- toolBar红-->
+    <color name="colorOrange">#FFBC00</color><!-- 橙-->
+
+    <color name="colorShiYellow">#DBB86B</color><!-- 屎黄色-->
+
+    <color name="colorPink">#FFBCA0</color><!-- 粉-->
+    <color name="colorMeat">#FFBCA0</color><!-- 杏色-->
+
+
+    <color name="colorYellow">#FFFF00</color><!-- 黄-->
+    <color name="colorOldGreen">#228B22</color><!-- 老年绿-->
+    <color name="colorYoungGreen">#00FF00</color><!-- 年轻绿-->
+    <color name="colorCyan">#00FFFF</color><!-- 青-->
+    <color name="colorQQCyan">#14B7F3</color><!-- 青-->
+    <color name="colorDarkBlue">#000080</color><!-- 深蓝-->
+    <color name="colorLightBlue">#0000FF</color><!-- 浅蓝-->
+    <color name="colorMainBtomNavBlue">#12B5F6</color><!-- 浅蓝-->
+    <color name="colorOldBlue">#3086BE</color><!-- 老蓝-->
+    <color name="colorLoginBtnBlue">#DD24A9DD</color><!-- 登录按钮蓝-->
+    <color name="colorPayStroke">#79C8F1</color><!-- 紫-->
+    <color name="colorLightSkyBlue">#B6DEF7</color><!-- 浅天蓝-->
+    <color name="colorPurple">#CD00CD</color><!-- 紫-->
+
+    <color name="colorWhiteGray">#EEEEEE</color><!-- 白-->
+    <color name="colorBlack">#000000</color><!-- 黑-->
+    <color name="colorAlphaBlack">#88000000</color><!-- 黑-->
+    <color name="colorWhite">#FFFFFF</color><!-- 白 -->
+
+    <color name="colorDartGray">#696969</color><!-- 深灰-->
+    <color name="colorMainBtomNavGray">#828696</color><!-- 深灰-->
+    <color name="colorBtmNavGray">#ABADBB</color><!-- 略深灰-->
+    <color name="colorLightGray">#CCCCCC</color><!-- 浅灰-->
+    <color name="colorQianGray">#EEEEEE</color><!-- 浅灰-->
+    <color name="colorDrawableLeftIconGray">#CFD2D7</color><!-- 更浅点灰-->
+
+    <color name="colorMemberFunsItemBg">#F3F3F3</color><!-- 会员页面 4个功能条的样式-->
+
+    <!--    登录的两种颜色 -->
+    <color name="colorLoginBtnDisable">#F8938B</color>
+    <color name="colorLoginBtnEnable">#DC413C</color>
+
+    <color name="textColorPrimary">#616161</color>
+    <color name="viewBackground">@android:color/white</color>
+
+</resources>

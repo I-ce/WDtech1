@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    android:padding="@dimen/dp_20"
+    >
+    <!--命名规范act_reg_
+    -->
+
+    <include layout="@layout/act_reg_header_layout"/>
+
+    <LinearLayout
+        android:layout_margin="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <!--    注册  -->
+        <TextView
+            android:text="@string/reg"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp_23"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--    手机号输入框  -->
+        <EditText
+            android:id="@+id/act_login_inputMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:background="@null"
+            android:drawableLeft="@mipmap/img_act_login_drawable_left_phone"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_15"
+            android:textSize="@dimen/dp_15"
+            android:textColorHint="@color/colorLightGray"
+            android:hint="@string/input_your_mobile"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="phone"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_1"
+            android:layout_below="@id/act_login_inputMobile"
+            android:background="@color/colorLightGray" />
+
+        <TextView
+            android:text="@string/next_step"
+            android:textSize="@dimen/dp_18"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@drawable/act_reg_btn_bg_unchecked"
+            android:layout_marginTop="@dimen/dp_50"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/shiyongtiaokuan"
+            android:textSize="@dimen/dp_12"
+            android:textColor="@color/colorLightGray"
+            android:drawableLeft="@mipmap/img_drawable_left_yes"
+            android:drawablePadding="@dimen/dp_10"
+            android:layout_marginTop="@dimen/dp_5"
+            android:gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+    </LinearLayout>
+
+</LinearLayout>

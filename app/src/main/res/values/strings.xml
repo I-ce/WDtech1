@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Bee叨</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">New Page</string>
+    <string name="reg">注册</string>
+    <string name="input_your_mobile">请输入手机号码</string>
+    <string name="next_step">下一步</string>
+    <string name="input_your_vfn_code">请输入验证码</string>
+    <string name="resend">重新发送</string>
+    <string name="mesg">消息</string>
+    <string name="add">添加</string>
+    <string name="linkman">联系人</string>
+    <string name="creatqun">创建群聊</string>
+    <string name="mine">我的</string>
+    <string name="more">更多</string>
+    <string name="please_hold">请骚等..</string>
+    <string name="dian">就一个图片，点什么点</string>
+    <string name="nothing">没什么了</string>
+    <string name="please_connect_wifi">请连接WIFI</string>
+    <string name="newfriend">新朋友</string>
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:background="#ffffff">
+
+
+    <ImageView
+        android:layout_marginLeft="@dimen/dp_5"
+        android:layout_centerVertical="true"
+        android:src="@drawable/arrow_right"
+        android:id="@+id/iv_group_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:padding="@dimen/dp_11"
+        android:textSize="@dimen/dp_18"
+        android:text="我的好友"
+        android:gravity="center"
+        android:layout_toRightOf="@id/iv_group_icon"
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+    <TextView
+        android:layout_marginRight="@dimen/dp_5"
+        android:text="10/10"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:id="@+id/tv_group_number"
+        android:layout_alignParentRight="true"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+</RelativeLayout>
+

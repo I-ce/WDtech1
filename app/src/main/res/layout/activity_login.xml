@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <ImageView
+        android:id="@+id/init_image"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@mipmap/img_splash_init"
+        android:scaleType="fitXY"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+        <!--    命名规范：act_login_
+    -->
+        <!--    头部导航图-->
+        <ImageView
+            android:id="@+id/act_login_pageBG"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:src="@mipmap/img_login_bg"
+            />
+
+
+        <!--    腹部主要的登录方式-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/dp_70"
+            android:orientation="vertical"
+            >
+
+            <!--    手机号登录和其他登录方式
+                -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/dp_30"
+                android:paddingRight="@dimen/dp_30"
+                >
+                <ImageView
+                    android:src="@mipmap/img_app_sub_icon_im"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dp_30"
+                    />
+                <EditText
+                    android:id="@+id/act_login_inputMobile"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_45"
+                    android:background="@null"
+                    android:hint="账号"
+                    android:textColorHint="@color/colorWhite"
+                    android:text="18937927721"
+                    android:textColor="@color/colorWhite"
+                    android:maxLines="1"
+                    android:maxLength="11"
+                    android:inputType="phone"
+                    />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp_0_1"
+                    android:layout_below="@id/act_login_inputMobile"
+                    android:background="@color/colorLightGray" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_3">
+
+                    <EditText
+                        android:id="@+id/act_login_inputPwd"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_45"
+                        android:background="@null"
+                        android:text="123456"
+                        android:textColor="@color/colorWhite"
+                        android:hint="密码"
+                        android:textColorHint="@color/colorWhite"
+                        android:inputType="textPassword"
+                        android:maxLength="16"
+                        android:maxLines="1"
+                        />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp_0_1"
+                        android:layout_below="@id/act_login_inputPwd"
+                        android:background="@color/colorLightGray" />
+
+                    <ImageView
+                        android:id="@+id/act_login_pwdIsShowImg"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:src="@mipmap/img_close_eye"
+                        />
+
+                    <ImageView
+                        android:id="@+id/act_login_clear_pwd"
+                        android:layout_width="@dimen/dp_20"
+                        android:layout_height="@dimen/dp_20"
+                        android:layout_toLeftOf="@id/act_login_pwdIsShowImg"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp_5"
+                        android:src="@mipmap/img_drawable_left_clear"
+                        />
+                </RelativeLayout>
+                <!--    登录按钮
+                -->
+                <Button
+                    android:id="@+id/act_login_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:background="@drawable/act_login_btn"
+                    android:text="登  录"
+                    android:textSize="@dimen/dp_15"
+                    android:textColor="@color/colorWhite"
+                    />
+
+                <RelativeLayout
+                    android:layout_marginTop="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/act_login_verificationCodeLogin"
+                        android:text="短信验证码登录"
+                        android:textColor="@color/colorLoginBtnBlue"
+                        android:textSize="@dimen/dp_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/dp_5"
+                        />
+                    <TextView
+                        android:id="@+id/act_login_goToReg"
+                        android:layout_alignParentRight="true"
+                        android:text="新用户注册"
+                        android:textColor="@color/colorLoginBtnBlue"
+                        android:textSize="@dimen/dp_14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp_5"
+                        />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <!--    脚部其他登录方式-->
+        <LinearLayout
+            android:id="@+id/act_login_footer_otherLoginMethod"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp_30"
+            android:paddingRight="@dimen/dp_30"
+            android:paddingBottom="@dimen/dp_20"
+            >
+
+            <ImageView
+                android:id="@+id/act_login_wxLogin"
+                android:src="@mipmap/img_wx_icon"
+                style="@style/act_login_bottom_four_login_icon"
+                />
+            <ImageView
+                android:id="@+id/act_login_wbLogin"
+                android:src="@mipmap/img_xl_icon"
+                style="@style/act_login_bottom_four_login_icon"
+                />
+            <ImageView
+                android:id="@+id/act_login_qqLogin"
+                android:src="@mipmap/img_qq_icon"
+                style="@style/act_login_bottom_four_login_icon"
+                />
+            <ImageView
+                android:id="@+id/act_login_fbLogin"
+                android:src="@mipmap/img_facebook_icon"
+                style="@style/act_login_bottom_four_login_icon"
+                />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

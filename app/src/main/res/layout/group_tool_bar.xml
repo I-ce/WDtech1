@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/genernal_tool_bar_zongLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_gradient"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/dp_30">
+    <!--    命名规范
+    genernal_tool_bar_
+    -->
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/genernal_tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_60"
+        android:paddingBottom="@dimen/dp_10">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/genernal_tool_bar_imag"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:gravity="center"
+            app:placeholderImage="@mipmap/dlrb"
+            app:roundAsCircle="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mesg"
+            android:layout_marginLeft="@dimen/dp_120"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/sp_18" />
+        <ImageView
+            android:id="@+id/genernal_tool_bar_img_add"
+            android:layout_width="@dimen/dp_20"
+            android:layout_height="@dimen/dp_20"
+            android:layout_marginLeft="@dimen/dp_120"
+            android:src="@mipmap/img_add" />
+
+    </android.support.v7.widget.Toolbar>
+</LinearLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <include layout="@layout/act_reg_header_layout"/>
+
+    <!--act_vfn_code_
+    -->
+    <LinearLayout
+        android:layout_margin="@dimen/dp_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        >
+
+        <!--    注册  -->
+        <TextView
+            android:text="验证码已发至"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/dp_23"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <!--    发验证码的手机号  -->
+        <TextView
+            android:id="@+id/act_vfn_code_phone"
+            android:text="+86 | 17600152427"
+            android:textSize="@dimen/dp_15"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            />
+        <EditText
+            android:id="@+id/act_login_inputMobile"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_45"
+            android:background="@null"
+            android:drawableLeft="@mipmap/img_act_reg_verification_code_drawable_left"
+            android:drawablePadding="@dimen/dp_10"
+            android:textSize="@dimen/dp_15"
+            android:textColorHint="@color/colorLightGray"
+            android:hint="@string/input_your_vfn_code"
+            android:maxLines="1"
+            android:maxLength="11"
+            android:inputType="phone"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_0_1"
+            android:layout_below="@id/act_login_inputMobile"
+            android:background="@color/colorLightGray" />
+
+        <TextView
+            android:id="@+id/resend_btn"
+            android:text="@string/resend"
+            android:textSize="@dimen/dp_18"
+            android:textColor="@color/colorWhite"
+            android:gravity="center"
+            android:background="@drawable/act_reg_btn_bg_unchecked"
+            android:layout_marginTop="@dimen/dp_50"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+</LinearLayout>
